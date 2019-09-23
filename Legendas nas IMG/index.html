@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Legenda nas imagens</title>
+
+
+
+    <style>
+        a span.voltar{
+	        color:#FFF;
+	        font-size:14px;
+        }
+        body {
+	        font: 10px normal Verdana, Arial, Helvetica, sans-serif;
+	        margin: 0;
+	        padding: 0;
+	        background: #1d1d1d;
+        }
+        .traducao {
+	        height: 481px;
+	        width: 598px;
+	        margin: -240px 0 0 -299px;
+	        top: 50%;
+	        left: 50%;
+	        position: absolute;
+        }
+        .imgefeito{
+            margin: 0;
+            overflow: hidden;
+            float: left;
+            position: relative;
+        }
+        .imgefeito a {
+            text-decoration: none;
+            float: left;
+        }
+        .imgefeito a:hover {
+            cursor: pointer;
+        }
+        .imgefeito a  img {
+            float: left;
+            margin: 0;
+            border: none;
+            padding: 10px;
+            background: #fff;
+            border: 1px solid #ddd;
+        }
+        .imgefeito a .mais {  /* Configuração do botão 'Saiba Mais' e outros. */
+            position: absolute;
+            right: 20px;
+            bottom: 20px;
+            font-size: 1.2em;
+            color: #fff;
+            background: #000;
+            padding: 5px 10px;
+            filter:alpha(opacity=65);
+	        opacity:.65;
+	        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=65)";
+        }
+        .imgefeito a:hover .desc {
+            display: block;
+            font-size: 1.2em;
+            padding: 10px 0;
+            background: #111;
+            filter:alpha(opacity=75);
+	        opacity:.75;
+	        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";
+            color: #fff;
+            position: absolute;
+            bottom: 11px;               /* Posicionar legenda abaixo */
+            left: 11px;
+            padding: 10px;
+            margin: 0;
+            width: 615px;
+            border-top: 1px solid #999;
+        }
+        .imgefeito a:hover .desc strong {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 1.5em;
+        }
+        .rd {
+            color: #000;
+            background: #fff;
+            *display: none; /* Sumir da tela */
+            *visibility: hidden;
+        }
+        .rd:hover {
+            visibility: hidden;
+        }
+        .imgefeito a .desc {	display: none; }
+        .imgefeito a:hover .mais{ visibility: hidden;}
+    </style>
+</head>
+<body>
+    <div class="traducao">
+        <div class="imgefeito">
+            <a href="#">
+                <img src="img/javascript.jpg" alt="JS">
+                <span class="mais">Saiba mais</span>
+                <span class="desc">
+                    <strong>Yoshi</strong>
+                    Yoshi foi criado pelo designer gráfico Shigefumi Hino, em resposta ao grupo de designers da Nintendo, 
+                    que estavam manifestando o desejo de uma viagem de Mario em um dinossauro.
+                </span>
+            </a>
+        </div>
+        <a href="#"><span class="voltar">Voltar ao artigo</span></a>
+        <div class="rd"><p>Ronald</p></div>
+    </div>
+</body>
+</html>
